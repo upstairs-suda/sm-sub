@@ -10,6 +10,7 @@ class ProductService
     public function toDisplayName(IProduct $product): string
     {
         $string = $product->getName() . ' (' . $product->getPrice() . ')';
+        $string .= ' <staging>';
 
         return (string) wstring::from($string)->pad(5, '*');
     }
