@@ -11,6 +11,6 @@ class ProductService
     {
         $string = $product->getName() . ' (' . $product->getPrice() . ')';
 
-        return (string) wstring::from($string)->pad(5, '*');
+        return (string) wstring::from($string)->pad(3, '*');
     }
 }
